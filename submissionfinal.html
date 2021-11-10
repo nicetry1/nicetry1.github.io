@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>LEVEL 1 to me is...</title>
+        <title>Level One to me is...</title>
         <style>
-            body {background-color: plum;}
+            body {background-color: #ffbdf6;}
             textarea {
-            background-color: rgb(165, 105, 196);
+            background-color: plum;
             font-display: white;
             color: white;
             font-family: Arial, Helvetica, sans-serif;
@@ -13,25 +13,33 @@
             width: 300px; height: 600px;
             border:none;
             }
+            
+            label {  font-display: white;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            text-align: center;}
             .testbox {
             display: flex;
             justify-content: center;
             align-items: center;
             height: inherit;
             padding: 3px;
+            margin: 10px;
             }
             .form {
              position: relative;
               margin: 10px 0;
              font-display: white;
              color: white;
-             justify-content: center;
+               font-display: white;
+        
              }
              .form:hover p, .form:hover i {
-             color: #e9ff1e;
+             color: #ff89da;
              }
              input:hover, select:hover, textarea:hover {
-             box-shadow: 0 0 5px 0 #fffc41;
+             box-shadow: 0 0 20px 0 #ff89da;
              }
                 .btn-block {
                 margin-top: 20px;
@@ -44,29 +52,34 @@
              -webkit-border-radius: 5px; 
              -moz-border-radius: 5px; 
              border-radius: 5px; 
-             background-color: #64004f;
+             background-color: plum;
              font:helvetica;
               font-size: 16px;
              color: #fff;
              cursor: pointer;
              }
-             button:hover {
-               background-color: #6300a5;
+             input:hover {
+               background-color: plum;
                  }
         </style>
         </head>
           <body>
          
             <div class="testbox">
-               <form action="javascript:void(0)" method="post" id="form">
+               <form action="submissionfinal.html" method="post" id="form">
                    <div class="form">
-                       <textarea id="submission" name="submission" color = white> LEVEL 1 to me is... </textarea>
+                       <label for="name">What's your name?</label>
+                       <br> <br> 
+                       <input type="text" id="name"> <br><br> 
+                       <br>
+                       <label for="submission">Level One to me is...</label> <br> <br> 
+                       <textarea id="submission" name="submission" color = white></textarea>
                     </div>
                     <br>
            <div class="form">
                <br>
                <div class="btn-block">
-                <input type="submit" value="submit">
+                <input type="submit" value="submit🔓">
                </div>
            </div>
            </form>
@@ -81,11 +94,13 @@
               let url = `https://sheet.best/api/sheets/df346c6b-b1d4-4f61-9ba1-2d9a6ff60779`;      
               let submission = form.submission.value;
               let date = new Date().toLocaleDateString("en-US");
+              let name = form.name.value;
               fetch(url, {
                 method: "post",
                 body: JSON.stringify({ 
                     text: submission,
-                    date: date
+                    date: date,
+                    name: name,
                  }),
             
                 headers: { "Content-Type": "application/json" }
