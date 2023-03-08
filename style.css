@@ -1,0 +1,45 @@
+#content{
+                
+    height:50%;
+    width: 50%;
+    display: block;
+    padding-top:auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:auto;
+    align-content: center;
+}
+
+#content:hover {
+    filter: blur(1px);
+}
+
+#text{
+    font-family: Helvetica, sans-serif;
+    font-size:small;
+    display:block;
+    margin-left:auto; 
+    margin-right:auto;
+    text-align: left;
+    filter: blur(.3px);
+}
+
+#text2{
+    font-family: Helvetica, sans-serif;
+    font-size:small;
+    display:block;
+    margin-left:auto; 
+    margin-right:auto;
+    text-align: right;
+    filter: blur(.3px);
+}
+iframe {
+    align-content: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    min-width: 90vw;
+    min-height: 90vh;
+
+}
