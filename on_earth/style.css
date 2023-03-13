@@ -1,7 +1,6 @@
-
-p, h1 {
+p, h1, ul {
     font-family: Helvetica, sans-serif;
-    color: whitesmoke;
+    color: black;
 }
 /* VIDEO BACKGROUND STYLE
 video {
@@ -36,5 +35,39 @@ h1 {
 
 }
 .navbar {
-
+position: fixed;
+display:inline;
+justify-content: end;
+text-align:right;
+list-style-type: none;
+}
+#navbar {
+margin-top: 2vw;
+margin-left: 80vw;
+}
+#contact-text {
+display:flex;
+width: 30vw;
+padding: 5vw;
+}
+#form {
+    display:inline-block;
+    width: 30vw;
+    padding:5vw;
+    ;
+}
+.flexbox {
+    display: flex;
+}
+#name {
+    width: 25vw;
+    margin:.25vw
+}
+#entry {
+    width: 25vw;
+    height: 10rem;
+    margin:.25vw;
+}
+input[type=submit] {
+margin: .5vw;
 }
