@@ -1,7 +1,7 @@
 // javascript will go here
 const el = document.getElementById("form");
 const doneBox = document.getElementById("doneBox");
-const entryEl = document.getElementById("entry");
+
 el.addEventListener("submit", handleFormSubmit);
 
 function handleFormSubmit(event){
@@ -18,6 +18,11 @@ function handleFormSubmit(event){
      body: JSON.stringify({name: name, date: date, entry: entry, detail: detail,}),
      headers: {'Content-Type': 'application/json'}
  })
- .then((data) => entryEl.value = 'thank you!')
- ;
+ .then((data) => {
+      form.entry.value = 'thank you!';
+      form.name.value = '';
+      form.detail.value = '';
+      document.getElementById('submit').style.display='none';
+    }
+  );
 };
