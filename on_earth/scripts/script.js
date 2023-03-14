@@ -1,6 +1,7 @@
 // javascript will go here
 const el = document.getElementById("form");
-
+const doneBox = document.getElementById("doneBox");
+const entryEl = document.getElementById("entry");
 el.addEventListener("submit", handleFormSubmit);
 
 function handleFormSubmit(event){
@@ -10,9 +11,13 @@ function handleFormSubmit(event){
  let name = form.name.value;
  let date = new Date().toLocaleDateString('en-US');
  let entry = form.entry.value;
+ let detail = form.detail.value;
+
  fetch(url, {
      method: 'post',
-     body: JSON.stringify({name: name, date: date, entry: entry,}),
+     body: JSON.stringify({name: name, date: date, entry: entry, detail: detail,}),
      headers: {'Content-Type': 'application/json'}
- });
+ })
+ .then((data) => entryEl.value = 'thank you!')
+ ;
 };

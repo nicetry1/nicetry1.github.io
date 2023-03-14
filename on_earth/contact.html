@@ -22,9 +22,24 @@
         </p>
     </section>
     <form action="javascript:void(0);" method="post" id="form">
-        <input type="text" id="name">
-        <textarea id="entry"></textarea>
+
+        <div class="labelContainer">
+            <label for="name">name</label>
+            <input type="text" id="name">
+        </div>
+        <div class="labelContainer">
+            <label for="detail">contact info</label>
+            <input type="text" id="detail">
+        </div>
+        <div class="labelContainer">
+            <label for="entry">message</label>
+            <textarea id="entry"></textarea>
+        </div>
+
+
         <input type="submit" value="submit">
+        <!-- <div id="doneBox"></div> -->
+
     </form>
     </div>
     <script src="scripts/script.js"></script>

@@ -1,4 +1,4 @@
-p, h1, ul {
+p, h1, ul, label {
     font-family: Helvetica, sans-serif;
     color: black;
 }
@@ -51,7 +51,7 @@ width: 30vw;
 padding: 5vw;
 }
 #form {
-    display:inline-block;
+    display: block;
     width: 30vw;
     padding:5vw;
     ;
@@ -59,7 +59,7 @@ padding: 5vw;
 .flexbox {
     display: flex;
 }
-#name {
+#name, #detail {
     width: 25vw;
     margin:.25vw
 }
@@ -70,4 +70,9 @@ padding: 5vw;
 }
 input[type=submit] {
 margin: .5vw;
+}
+
+.labelContainer{
+    display: flex;
+    flex-direction: column;
 }
