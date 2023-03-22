@@ -35,9 +35,9 @@ p {
     text-align: justify;
     text-justify: inter-ideograph;
 }
-.navbarhome {
+/* .navbarhome {
 
-}
+} */
 .navbar {
 position: fixed;
 display:inline;
