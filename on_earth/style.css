@@ -102,3 +102,16 @@ section {
 width: 72.5vw;
 height:fit-content;
 }
+#explore-flex {
+    display: flex;
+    flex-direction: row;
+    gap:2.5vw;
+}
+.placeholder-explore {
+    background-color: black;
+    color:white;
+}
+.placeholder-explore:hover {
+    background-color: white;
+    color: black;
+}
