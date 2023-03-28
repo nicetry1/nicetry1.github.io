@@ -1,3 +1,210 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8656c77b5b5751c7cdaa9d29bc7b3fe96425338b109eb7e9b68a4bb4ee41d531
-size 3412
+p, h1, ul, label, table {
+    font-family: Helvetica, sans-serif;
+    color: black;
+    filter:blur(.25px);
+}
+body {
+    margin-left: 5vw;
+}
+/* VIDEO BACKGROUND STYLE */
+.videobg {
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -1;
+} 
+
+.photobg {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    gap: 20vw;
+}
+h1 {
+    margin-top: 1%;
+    padding: none;
+}
+h2 {
+    font-family: Helvetica, sans-serif;
+    color: rgb(45, 45, 45);
+    filter:blur(.25px);
+    font-size: 1.25rem;
+}
+p {
+    text-align: justify;
+}
+a {
+text-decoration: none;
+}
+a:link {
+    color: black;
+}
+a:visited {
+    color: rgb(62, 62, 62);
+}
+a:hover {
+    filter:blur(2px);
+}
+/* styling for home page navigation elements */
+#homepage-logo {
+background-color: whitesmoke;
+padding: 20px;
+border-radius: 40px;
+margin-left: 10vw;
+margin-bottom: 60%;
+}
+#nav-about, #nav-explore, #nav-breakdown, #nav-contact {
+background-color: whitesmoke;
+padding: 15px;
+border-radius: 25px;
+}
+#nav-about, #nav-breakdown {
+    margin-top: 5vh;
+}
+#nav-explore, #nav-contact {
+    margin-bottom: 5vh;
+}
+.navbarhome {
+    display: flex;
+    list-style-type: none;
+    gap: 5vw;
+    flex-wrap: wrap;
+}
+.navbar {
+position: fixed;
+display:inline;
+justify-content: end;
+text-align:right;
+list-style-type: none;
+}
+#navbar {
+margin-top: 2vw;
+margin-left: 80vw;
+}
+.contact-flexbox {
+    display: flex;
+    gap: 5vw;
+    flex-wrap: wrap;
+}
+#contact-text {
+width: 30vw;
+padding: 2.5vw;
+background-color: whitesmoke;
+margin-left: 5vw;
+margin-bottom: 75%;
+border-radius: 40px;
+}
+#form {
+    display: block;
+    width: 30vw;
+    padding:2.5vw;
+    background-color: whitesmoke; /* whitesmoke half opacity for reference: rgba(245,245,245,.5) */
+    border-radius: 40px;
+    margin-bottom: 75%;
+}
+#name, #detail {
+    width: 25vw;
+    margin:.25vw
+}
+#entry {
+    width: 25vw;
+    height: 10rem;
+    margin:.25vw;
+}
+input[type=submit] {
+margin: .5vw;
+}
+
+.labelContainer{
+    display: flex;
+    flex-direction: column;
+}
+#about-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5vw;
+    flex-wrap: wrap;
+}
+#about-flex-items {
+    width: 35vw;
+    /* attempting to get the image and text to wrap at certain viewport size...
+    min-width: 400px;
+    */
+}
+#about-img {
+    max-height: 25vw;
+    height: auto;
+    float: right;
+    height: inherit;
+   
+}
+section {
+    width: 75vw;
+}
+#about-teaser {
+width: 72.5vw;
+height:fit-content;
+}
+/* css for old flexbox version of explore page
+#explore-flex {
+    display: flex;
+    flex-direction: row;
+    gap:2.5vw;
+}
+
+.placeholder-explore {
+    background-color: black;
+    color:white;
+}
+.placeholder-explore:hover {
+    background-color: white;
+    color: black;
+}
+
+-- below, css for scrapped colgroup feature for explore table:
+colgroup {
+    display: table-column-group;
+}
+*/
+table {
+    width: 75vw;
+}
+.first-columns {
+    border-right: 2px dotted;
+}
+.last-row {
+    border-bottom: none;
+}
+th, td {
+    padding: 2vw;
+    border-bottom: 2px dotted;
+    text-align: left;
+}
+tbody tr:hover {
+    color: whitesmoke;
+    background-color: black;
+}
+footer {
+    margin-top: 5%;
+}
+.contrast-footer {
+    color: whitesmoke;
+    margin-left: 75%;
+    margin-top: none;
+}
+ #breakdown-nextsteps {
+    margin-top: 7.5vh;
+ }
