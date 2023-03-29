@@ -213,15 +213,15 @@ footer {
  }
  /* Modal View styling for explore page */
  .modal {
- display: none;
+ display:none;
  position: fixed;
  z-index: 1;
- left:0;
- top:0;
- width: 100vw;
- height: 100vh;
+ left: 12.5vw;
+ top: 12.5vh;
+ width: 75vw;
+ height: 75vh;
  overflow: auto;
- background-color: whitesmoke;
+ background-color: rgb(176, 176, 176);
  border-radius: 40px;
  }
  .modal-content {
@@ -232,7 +232,6 @@ footer {
  }
  .close {
     font-size: 2rem;
-    float: right;
  }
  .close:hover, .close:focus {
     filter: blur(2px);
