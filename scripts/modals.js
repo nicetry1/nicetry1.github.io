@@ -1,16 +1,21 @@
-let firstModal = document.getElementById("firstModal");
-let secondModal = document.getElementById("secondModal");
-let thirdModal = document.getElementById("thirdModal");
-let fourthModal = document.getElementById("fourthModal");
-let fifthModal = document.getElementById("fifthModal");
 
-let firstBtn = document.getElementById("firstContent");
-let secondBtn = document.getElementById("secondContent");
-let thirdBtn = document.getElementById("thirdContent");
-let fourthBtn = document.getElementById("fourthContent");
-let fifthBtn = document.getElementById("fifthContent");
+const firstModal = document.getElementById("firstModal");
+const secondModal = document.getElementById("secondModal");
+const thirdModal = document.getElementById("thirdModal");
+const fourthModal = document.getElementById("fourthModal");
+const fifthModal = document.getElementById("fifthModal");
 
-let span = document.getElementsByClassName("close");
+const firstBtn = document.getElementById("firstContent");
+const secondBtn = document.getElementById("secondContent");
+const thirdBtn = document.getElementById("thirdContent");
+const fourthBtn = document.getElementById("fourthContent");
+const fifthBtn = document.getElementById("fifthContent");
+
+const span1 = document.getElementById("close1");
+const span2 = document.getElementById("close2");
+const span3 = document.getElementById("close3");
+const span4 = document.getElementById("close4");
+const span5 = document.getElementById("close5");
 
 firstBtn.onclick = function() {
   firstModal.style.display = "block";
@@ -28,10 +33,18 @@ fifthBtn.onclick = function() {
   fifthModal.style.display = "block";
 };
 
-span.onclick = function() {
+span1.onclick = function() {
  firstModal.style.display = "none";
- secondModal.style.display = "none";
- thirdModal.style.display = "none";
- fourthModal.style.display = "none";
- fifthModal.style.display = "none";
+};
+span2.onclick = function() {
+  secondModal.style.display = "none";
+};
+span3.onclick = function() {
+  thirdModal.style.display = "none";
+};
+span4.onclick = function() {
+  fourthModal.style.display = "none";
+};
+span5.onclick = function() {
+  fifthModal.style.display = "none";
 };

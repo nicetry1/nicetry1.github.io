@@ -1,4 +1,5 @@
-// javascript will go here
+/* jslint es6 */
+
 const el = document.getElementById("form");
 const doneBox = document.getElementById("doneBox");
 
