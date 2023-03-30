@@ -189,10 +189,6 @@ input[type=text] {
 }
 #about-img {
     max-height: 25vw;
-    height: auto;
-    float: right;
-    height: inherit;
-   
 }
 section {
     width: 75vw;
