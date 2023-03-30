@@ -296,6 +296,14 @@ footer {
  display:flex;
  gap: 5vw;
  }
+ .cliff-house-text {
+    margin-left: 5%;
+ margin-right: 5%;
+ padding: 20px;
+ border: none;
+ max-width: 75vw;
+ gap: 5vw;
+ }
  .close {
     font-size: 2rem;
     position: fixed;
