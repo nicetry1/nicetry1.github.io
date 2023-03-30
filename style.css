@@ -54,28 +54,41 @@ a:link {
 }
 a:visited {
     color: rgb(62, 62, 62);
+    filter:blur(.25px);
 }
 a:hover {
     filter:blur(2px);
 }
 /* styling for home page navigation elements */
 #homepage-logo {
-background-color: whitesmoke;
+color: whitesmoke;
 padding: 20px;
-border-radius: 40px;
+font-size:3rem;
+filter:blur(1px);
+
 margin-left: 10vw;
 margin-bottom: 60%;
 }
 #nav-about, #nav-explore, #nav-breakdown, #nav-contact {
+/* old style that i got rid of but might want back!
 background-color: whitesmoke;
+box-shadow: 0px 0px 5px 5px whitesmoke; 
+border-radius: 25px; */
 padding: 15px;
-border-radius: 25px;
 }
 #nav-about, #nav-breakdown {
     margin-top: 5vh;
 }
 #nav-explore, #nav-contact {
     margin-bottom: 5vh;
+}
+.homenav {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    filter: blur(.25);
+}
+.homenav:visited {
+    color: rgb(224, 224, 224);
 }
 .navbarhome {
     display: flex;
@@ -233,6 +246,7 @@ footer {
 }
  #breakdown-nextsteps {
     margin-top: 7.5vh;
+    margin-bottom: 7.5vh;
  }
  
  button {
