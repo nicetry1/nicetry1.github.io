@@ -249,6 +249,7 @@ footer {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
+    white-space:nowrap;
  }
  button:hover {
     cursor:crosshair;
@@ -268,17 +269,37 @@ footer {
  border: 2px double rgb(176, 176, 176);
  }
  .modal-content {
- margin: 15%;
+ margin-left: 5%;
+ margin-right: 5%;
  padding: 20px;
  border: none;
- width: 75vw;
+ max-width: 75vw;
+ display:flex;
+ gap: 5vw;
  }
  .close {
     font-size: 2rem;
-    margin-top: 5%;
-    margin-right: 5%;
-    float: right;
+    position: fixed;
+    margin-left: 70%;
+    margin-top: 2.5%;
  }
  .close:hover, .close:focus {
     filter: blur(2px);
+ }
+ #ruinjpg {
+    max-width:40vw;
+ }
+ #cliffhousemenu {
+    max-width: 65vw;
+ }
+ #goingtoblazes {
+    min-width: 40vw;
+    margin-left: 17.5vw;
+    margin-right: 17.5vw;
+ }
+ #mansionsite {
+    max-width: 65vw;
+ }
+ #short-talk {
+    max-width: 40vw;
  }
