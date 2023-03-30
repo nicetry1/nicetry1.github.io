@@ -1,15 +1,7 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 p, h1, ul, label, table {
     font-family: Helvetica, sans-serif;
     color: black;
-    -webkit-filter:blur(.25px);
-            filter:blur(.25px);
+    filter:blur(.25px);
 }
 body {
     margin-left: 5vw;
@@ -27,8 +19,7 @@ body {
    
 }
 .photobg {
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     width: 100vw;
     position: fixed;
     top: 0;
@@ -39,8 +30,6 @@ body {
 header {
     position: sticky;
     top: 0;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
     display: inline-flex;
     gap: 20vw;
 }
@@ -51,8 +40,7 @@ h1 {
 h2 {
     font-family: Helvetica, sans-serif;
     color: rgb(45, 45, 45);
-    -webkit-filter:blur(.25px);
-            filter:blur(.25px);
+    filter:blur(.25px);
     font-size: 1.25rem;
 }
 p {
@@ -66,20 +54,17 @@ a:link {
 }
 a:visited {
     color: rgb(62, 62, 62);
-    -webkit-filter:blur(.25px);
-            filter:blur(.25px);
+    filter:blur(.25px);
 }
 a:hover {
-    -webkit-filter:blur(2px);
-            filter:blur(2px);
+    filter:blur(2px);
 }
 /* styling for home page navigation elements */
 #homepage-logo {
 color: whitesmoke;
 padding: 20px;
 font-size:3rem;
--webkit-filter:blur(1px);
-        filter:blur(1px);
+filter:blur(1px);
 
 margin-left: 10vw;
 margin-bottom: 60%;
@@ -100,8 +85,7 @@ padding: 15px;
 .homenav {
     font-family: Helvetica, sans-serif;
     font-weight: bold;
-    -webkit-filter: blur(.25px);
-            filter: blur(.25px);
+    filter: blur(.25px);
     color: whitesmoke;
 }
 .homenav:link {
@@ -111,21 +95,16 @@ padding: 15px;
     color: rgb(224, 224, 224);
 }
 .navbarhome {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     list-style-type: none;
     gap: 5vw;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     margin-right: 5vw;
 }
 .navbar {
 position: fixed;
 display:inline;
--webkit-box-pack: end;
-    -ms-flex-pack: end;
-        justify-content: end;
+justify-content: end;
 text-align:right;
 list-style-type: none;
 }
@@ -134,12 +113,9 @@ margin-top: 2vw;
 margin-left: 80vw;
 }
 .contact-flexbox {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 5vw;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 #contact-text {
 width: 30vw;
@@ -169,8 +145,7 @@ border-radius: 40px;
     border-radius: 5px;
     font-family: Helvetica, sans-serif;
     color: black;
-    -webkit-filter:blur(.25px);
-            filter:blur(.25px);
+    filter:blur(.25px);
 }
 input[type=submit] {
     margin: .5vw;
@@ -181,8 +156,7 @@ input[type=submit] {
     text-decoration: none;
     font-family: Helvetica, sans-serif;
     color: black;
-    -webkit-filter:blur(.25px);
-            filter:blur(.25px);
+    filter:blur(.25px);
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
@@ -193,31 +167,19 @@ input[type=text] {
     padding: 3px;
     font-family: Helvetica, sans-serif;
     color: black;
-    -webkit-filter:blur(.25px);
-            filter:blur(.25px);
+    filter:blur(.25px);
     cursor: pointer;
     border-radius: 5px;
 }
 .labelContainer{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
 }
 #about-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     gap: 2.5vw;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 .about-flex-items {
     width: 35vw;
@@ -233,8 +195,6 @@ section {
 }
 #about-teaser {
 width: 72.5vw;
-height:-webkit-fit-content;
-height:-moz-fit-content;
 height:fit-content;
 }
 /* css for old flexbox version of explore page
@@ -243,7 +203,6 @@ height:fit-content;
     flex-direction: row;
     gap:2.5vw;
 }
-
 .placeholder-explore {
     background-color: black;
     color:white;
@@ -252,7 +211,6 @@ height:fit-content;
     background-color: white;
     color: black;
 }
-
 -- below, css for scrapped colgroup feature for explore table:
 colgroup {
     display: table-column-group;
@@ -299,8 +257,7 @@ footer {
     text-decoration: none;
     font-family: Helvetica, sans-serif;
     color: black;
-    -webkit-filter:blur(.25px);
-            filter:blur(.25px);
+    filter:blur(.25px);
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
@@ -330,8 +287,6 @@ footer {
  padding: 20px;
  border: none;
  max-width: 75vw;
- display:-webkit-box;
- display:-ms-flexbox;
  display:flex;
  gap: 5vw;
  }
@@ -350,8 +305,7 @@ footer {
     margin-top: 2.5%;
  }
  .close:hover, .close:focus {
-    -webkit-filter: blur(2px);
-            filter: blur(2px);
+    filter: blur(2px);
  }
  #ruinjpg {
     max-width:40vw;
