@@ -88,6 +88,9 @@ padding: 15px;
     filter: blur(.25);
     color: whitesmoke;
 }
+.homenav:link {
+     color: whitesmoke;
+}
 .homenav:visited {
     color: rgb(224, 224, 224);
 }
