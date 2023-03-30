@@ -291,6 +291,7 @@ footer {
  }
  #cliffhousemenu {
     max-width: 65vw;
+    margin-top: 7.5vh;
  }
  #goingtoblazes {
     min-width: 40vw;
@@ -299,7 +300,11 @@ footer {
  }
  #mansionsite {
     max-width: 65vw;
+    margin-top: 7.5vh;
  }
  #short-talk {
+    margin-top: 10vh;
     max-width: 40vw;
+    margin-left: 17.5vw;
+    margin-right: 17.5vw;
  }
