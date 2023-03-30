@@ -35,7 +35,7 @@ header {
 }
 h1 {
     margin-top: 1%;
-    padding: none;
+    padding: 0;
 }
 h2 {
     font-family: Helvetica, sans-serif;
@@ -85,7 +85,7 @@ padding: 15px;
 .homenav {
     font-family: Helvetica, sans-serif;
     font-weight: bold;
-    filter: blur(.25);
+    filter: blur(.25px);
     color: whitesmoke;
 }
 .homenav:link {
@@ -181,7 +181,7 @@ input[type=text] {
     gap: 2.5vw;
     flex-wrap: wrap;
 }
-#about-flex-items {
+.about-flex-items {
     width: 35vw;
     /* attempting to get the image and text to wrap at certain viewport size...
     min-width: 400px;
@@ -241,13 +241,13 @@ tbody tr:hover {
     background-color: black;
 }
 footer {
-    margin-top: 0 auto;
+    margin-top: 0;
     position: sticky;
 }
 .contrast-footer {
     color: whitesmoke;
     margin-left: 75%;
-    margin-top: none;
+    margin-top: 0;
 }
  #breakdown-nextsteps {
     margin-top: 7.5vh;
