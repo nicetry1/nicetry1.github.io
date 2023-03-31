@@ -78,7 +78,6 @@ color: whitesmoke;
 padding: 20px;
 font-size:3rem;
 filter:blur(1px);
-
 margin-left: 10vw;
 margin-bottom: 60%;
 }
@@ -436,4 +435,8 @@ footer {
     figure {
         margin: 0;
     }
+    #homepage-logo {
+        padding: 5vw;
+        margin-left: 0;
+        }
  }
