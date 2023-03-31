@@ -207,7 +207,6 @@ section {
 }
 #about-teaser {
 width: 72.5vw;
-height:fit-content;
 }
 /* css for old flexbox version of explore page
 #explore-flex {
@@ -424,7 +423,7 @@ footer {
             margin-top: 7.5vh;
          }
     #goingtoblazes {
-            min-width: 40vw;
+            max-width: 55vw;
             margin-left: 10vw;
             margin-right: 10vw;
          }
@@ -442,4 +441,41 @@ footer {
         #nav-about, #nav-explore, #nav-breakdown, #nav-contact {
             padding: 2vw;
             }
- }
+    #about-teaser {
+        width: 75vw;
+    }
+    .contact-flexbox {
+        flex-direction: column;
+        gap: 2.5vh;
+    }
+    #contact-text {
+        margin-bottom: 0;
+        width: 75vw;
+        padding: 5vw;
+    }
+    #form {
+        margin-top: 0;
+        margin-left: 5vw;
+        width: 75vw;
+        padding: 5vw;
+    }
+    #name, #detail {
+        width: 65vw;
+        margin:.5vw
+    }
+    #entry {
+        width: 65vw;
+        margin:.5vw;
+    }
+    .close {
+        position: fixed;
+        margin-left: 65vw;
+        margin-top: 2.5%;
+     }
+     #short-talk {
+        margin-top: 5vh;
+        max-width: 65vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+     }
+}
