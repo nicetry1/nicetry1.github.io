@@ -436,7 +436,10 @@ footer {
         margin: 0;
     }
     #homepage-logo {
-        padding: 5vw;
+        padding: 1vw;
         margin-left: 0;
         }
+        #nav-about, #nav-explore, #nav-breakdown, #nav-contact {
+            padding: 2vw;
+            }
  }
