@@ -1,4 +1,4 @@
-p, h1, ul, label, table {
+p, h1, ul, label, table, figcaption {
     font-family: Helvetica, sans-serif;
     color: black;
     filter:blur(.25px);
@@ -32,7 +32,6 @@ body {
     left: 0;
     z-index: -1;
 }
-
 header {
     position: sticky;
     top: 0;
@@ -42,6 +41,14 @@ header {
 h1 {
     margin-top: 1%;
     padding: 0;
+}
+figure {
+    margin: 0;
+}
+figcaption {
+    font-size: .75rem;
+    text-align: right;
+    padding-right: 1vw;
 }
 h2 {
     font-family: Helvetica, sans-serif;
@@ -426,4 +433,7 @@ footer {
             max-width: 60vw;
             margin-top: 7.5vh;
          }
+    figure {
+        margin: 0;
+    }
  }
