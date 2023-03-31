@@ -12,11 +12,17 @@ body {
     z-index: -1;
     right:0;
     top:0;
-    
 } 
+.mobilegifbg {
+    position: fixed;
+    z-index: -1;
+    right:0;
+    top:0;
+    width: 100vw;
+    display: none;
+}
 .videoinbg {
     width: 100vw;
-   
 }
 .photobg {
     object-fit: cover;
@@ -250,7 +256,7 @@ footer {
  
  button {
     background-color: whitesmoke;
-    padding: 15px 32px;
+    padding: 2vw 2vh;
     border: none;
    /* border: 2px solid rgb(176, 176, 176); */
     text-align: center;
@@ -328,4 +334,96 @@ footer {
     max-width: 40vw;
     margin-left: 17.5vw;
     margin-right: 17.5vw;
+ }
+
+ /* mobile design */
+ @media screen and (max-width:1150px) {
+    .mobilegifbg {
+        position: fixed;
+        z-index: -1;
+        right:0;
+        top:0;
+        height: 100vh;
+        display:block;
+        background-repeat: repeat-y;
+    }
+    .videobg {
+        display: none;
+    }
+    #about-flex {
+        display: flex;
+        flex-direction:column;
+        gap: 2.5vw;
+        flex-wrap: wrap;
+    }
+    .about-flex-items {
+        width: 75vw;
+        /* attempting to get the image and text to wrap at certain viewport size...
+        min-width: 400px;
+        */
+    }
+    .navbarhome {
+        display: flex;
+        list-style-type: none;
+        gap: 5vw;
+        flex-wrap: wrap;
+        margin-right: 10vw;
+    }
+    .navbar {
+    position: relative;
+    margin-right: 10vw;
+    display: flex;
+    gap: 5vw;
+    justify-content: end;
+    list-style-type: none;
+
+    }
+    #navbar {
+    margin-top: 2vw;
+    margin-left: 80vw;
+    }
+    #about-img {
+        max-width: 75vw;
+        max-height: 75vw;
+    }
+    .navbarcontact:link {
+        color: whitesmoke;
+    }
+    .navbarcontact:visited {
+        color: rgb(224, 224, 224);
+    }
+    #homefooter {
+        margin-right: 15vw;
+        margin-top: 65vh;
+    }
+    #breakdown-nextsteps {
+        margin-top: 7.5vh;
+        margin-bottom: 7.5vh;
+     }
+     table {
+        width: 75vw;
+    }
+    button {
+        white-space:normal;
+    }
+    .modal-content {
+        display: block;
+        }
+    
+    #ruinjpg {
+            max-width:60vw;
+         }
+    #cliffhousemenu {
+            max-width: 60vw;
+            margin-top: 7.5vh;
+         }
+    #goingtoblazes {
+            min-width: 40vw;
+            margin-left: 10vw;
+            margin-right: 10vw;
+         }
+    #mansionsite {
+            max-width: 60vw;
+            margin-top: 7.5vh;
+         }
  }
