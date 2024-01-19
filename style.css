@@ -1,45 +1,54 @@
-#content{
-                
-    height:50%;
-    width: 50%;
-    display: block;
-    padding-top:auto;
-    margin-left: auto;
+@font-face {
+    font-family: "Padauk";
+    src: url(Padauk-Regular.ttf);
+}
+.title {
+    font-family: "Padauk";
+    font-size:5vw;
+    color: white;
+    margin-left: 24vw;
+}
+a {
+    font-family: "Padauk";
+    color: white;
+    text-decoration:none;
+}
+a:visited {
+    color: white;
+    opacity:95%;
+}
+.infocontainer {
+    display:grid;
+}
+.info {
+    display:inline;
+    margin: 10px;
+}
+.description, .extra, .contact {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.extra {
+    opacity: 0;
+}
+.extra:hover {
+    opacity: 100;
+}
+.contact {
+    margin-left: 55vw;
     margin-right: auto;
-    margin-bottom:auto;
-    align-content: center;
+    margin-top: 35vh;
+    margin-bottom: auto;
 }
-
-#content:hover {
-    filter: blur(1px);
-}
-
-#text{
-    font-family: Helvetica, sans-serif;
-    font-size:small;
-    display:block;
-    margin-left:auto; 
-    margin-right:auto;
-    text-align: left;
-    filter: blur(.3px);
-}
-
-#text2{
-    font-family: Helvetica, sans-serif;
-    font-size:small;
-    display:block;
-    margin-left:auto; 
-    margin-right:auto;
-    text-align: right;
-    filter: blur(.3px);
-}
-iframe {
-    align-content: center;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    min-width: 90vw;
-    min-height: 90vh;
-
+.videobg {
+    position: fixed;
+    z-index: -1;
+    right:0;
+    top:0;
+    background-color: black;
+} 
+.videoinbg {
+    height:100vh;
+    width: 100vw;
+    opacity: 20%;
 }

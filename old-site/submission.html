@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>save</title>
+        <meta charset="UTF-8">
+        <style>
+            body {background-color: #e9eee8;}
+            textarea {
+            background-color: #cfcfcf;
+            font-display: rgb(36, 40, 33);
+            color: rgb(36, 40, 33);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            width: 300px; height: 600px;
+            border:none;
+            -webkit-border-radius: 5px; 
+            -moz-border-radius: 5px; 
+            border-radius: 5px; 
+            }
+            textarea:hover {
+              background-color: #b6b9b4;
+            }
+            
+            label {  font-display: rgb(36, 40, 33);
+            color: rgb(36, 40, 33);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            text-align: center;}
+            .testbox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: inherit;
+            padding: 3px;
+            margin: 10px;
+            }
+            .form {
+             position: relative;
+              margin: 10px 0;
+             font-display: rgb(36, 40, 33);
+             color: rgb(36, 40, 33);
+             }
+             .form:hover p, .form:hover i {
+             color: #2d370a;
+             }
+             input:hover, select:hover, textarea:hover {
+             box-shadow: 0 0 20px 0 #ededed;
+             }
+                .btn-block {
+                margin-top: 20px;
+                text-align: center;
+              }
+              input {
+              width: 150px;
+              padding: 10px;
+             border: none;
+             -webkit-border-radius: 5px; 
+             -moz-border-radius: 5px; 
+             border-radius: 5px; 
+             background-color: #cfcfcf;
+             font:helvetica;
+             font-size: 16px;
+             color: #cfcfcf
+              }
+             input:hover {
+               background-color: #b6b9b4;
+                 }
+        </style>
+        </head>
+          <body>
+         
+            <div class="testbox">
+               <form action="submissionfinal.html" method="post" id="form">
+                   <div class="form">
+                       <label for="name">source</label>
+                       <br> <br> 
+                       <input type="text" id="name"> <br><br> 
+                       <br>
+                       <label for="submission">text</label> <br> <br> 
+                       <textarea id="submission" name="submission" color = white></textarea>
+                    </div>
+                    <br>
+           <div class="form">
+               <br>
+               <div class="btn-block">
+                <input type="submit" value="submit &#128275">
+               </div>
+           </div>
+           </form>
+           </div>
+           <script type="text/javascript"> 
+           const el = document.getElementById("form");
+
+            el.addEventListener("submit", handleFormSubmit);
+            function handleFormSubmit(event) {
+              const form = event.currentTarget;
+            console.log(form,'form submitted')
+              let url = `https://sheet.best/api/sheets/df346c6b-b1d4-4f61-9ba1-2d9a6ff60779`;      
+              let submission = form.submission.value;
+              let date = new Date().toLocaleDateString("en-US");
+              let name = form.name.value;
+              fetch(url, {
+                method: "post",
+                body: JSON.stringify({ 
+                    text: submission,
+                    date: date,
+                    name: name,
+                 }),
+            
+                headers: { "Content-Type": "application/json" }
+              });
+            }
+            </script>
+             </body>
+</html>
