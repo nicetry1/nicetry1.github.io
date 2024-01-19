@@ -20,6 +20,7 @@ a:visited {
 .infocontainer {
     display:grid;
     margin-left: 7.5vw;
+    margin-right: auto;
 }
 .info {
     display:inline;
