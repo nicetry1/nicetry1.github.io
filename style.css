@@ -24,7 +24,9 @@ a:visited {
 }
 .info {
     display:inline;
-    margin: 10px;
+    margin-right: 5vmin;
+    margin-bottom: 2.5vh;
+
 }
 .info:hover {
     opacity: 100;
