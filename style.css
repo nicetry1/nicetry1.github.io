@@ -19,10 +19,14 @@ a:visited {
 }
 .infocontainer {
     display:grid;
+    margin-left: 5vw;
 }
 .info {
     display:inline;
     margin: 10px;
+}
+.info:hover {
+    opacity: 100;
 }
 .description, .extra, .contact {
     color: white;
