@@ -44,8 +44,8 @@ a:visited {
 .contact {
     margin-left: 55vw;
     margin-right: auto;
-    margin-top: 25vh;
-    margin-bottom: auto;
+    margin-top: 20vh;
+    margin-bottom: 5vmin;
 }
 /*background style*/
 .movingbg {
@@ -70,7 +70,7 @@ a:visited {
 }
 
 /*mobile design*/ 
-@media screen and (max-width:1150px) {
+@media screen and (max-width:1000px) {
     .movingbg {
         display: none;
     } 
@@ -93,8 +93,9 @@ a:visited {
     }
     .contact {
         margin-left: 30vw;
-        margin-right:vmin;
+        margin-right:5vmin;
         margin-top: 15vh;
+        margin-bottom: 10vmin;
     }
     a {
         font-family: "Padauk";
