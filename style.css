@@ -28,15 +28,12 @@ a:visited {
     margin-bottom: 2.5vh;
 
 }
-.info:hover {
-    opacity: 100;
-}
 .description, .extra, .contact {
     color: white;
     font-family: 'Times New Roman', Times, serif;
 }
 .extra {
-    opacity: 10;
+    opacity: .25;
 }
 .extra:hover {
     opacity: 100;
