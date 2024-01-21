@@ -36,7 +36,7 @@ a:visited {
     font-family: 'Times New Roman', Times, serif;
 }
 .extra {
-    opacity: 0;
+    opacity: 10;
 }
 .extra:hover {
     opacity: 100;
