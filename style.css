@@ -8,6 +8,12 @@
     color: white;
     margin-left: 24vw;
 }
+.extra {
+    opacity: .25;
+}
+.extra:hover {
+    opacity: 100;
+}
 a, a:visited {
     font-family: "Padauk";
     color: white;
@@ -22,17 +28,10 @@ a, a:visited {
     display:inline;
     margin-right: 5vmin;
     margin-bottom: 2.5vh;
-
 }
 .description, .extra, .contact {
     color: white;
     font-family: 'Times New Roman', Times, serif;
-}
-.extra {
-    opacity: .25;
-}
-.extra:hover {
-    opacity: 100;
 }
 .contact {
     margin-left: 55vw;
