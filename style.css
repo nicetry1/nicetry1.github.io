@@ -8,14 +8,10 @@
     color: white;
     margin-left: 24vw;
 }
-a {
+a, a:visited {
     font-family: "Padauk";
     color: white;
     text-decoration:none;
-}
-a:visited {
-    color: white;
-    opacity:100%;
 }
 .infocontainer {
     display:grid;
