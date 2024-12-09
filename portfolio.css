@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "Padauk";
+    src: url(Padauk-Regular.ttf);
+}
+body {
+    background-color:midnightblue;
+}
+.title {
+    font-family: "Padauk";
+    font-size:5vw;
+    margin-bottom:none;
+}
+.about-this, .title {
+    color: lightsteelblue;
+    margin-left: 5vw;
+    
+}
+.about-this {
+    margin-bottom: 4vh;
+}
+.info {
+    padding:.5vh;
+    margin-left:2vw;
+    margin-right: 1.5vw;
+}
+.projectcontainer {
+    padding-bottom:4vh;
+}
+.projectoutcome {
+    font-family: 'Times New Roman', Times, serif;
+    font-size:larger;
+    color: lightsteelblue;
+    margin-bottom:1vh;
+}
+
+a, a:visited {
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(220, 232, 246);
+    text-decoration:none;
+}
+a:hover {
+    color: white;
+}
+.projectcontainer {
+    display:grid;
+    margin-left: 7.5vw;
+    margin-right: auto;
+}
+.sectionheading {
+    display:inline;
+    margin-right: 1vmin;
+    margin-bottom: 2.5vh;
+    font-size: large;
+}
+.sectiondescription, .about-this {
+    font-family:"Padauk";
+    color: lightsteelblue;
+}
+.sectionheading {
+    color: lightsteelblue;
+    font-family: "times new roman";
+}
+
+/*mobile design*/ 
+@media screen and (max-width:800px) {
+    .title {
+        font-family: "Padauk";
+        font-size:5vw;
+        color: white;
+        margin-left: 10vw;
+    }
+    .about-this {
+        font-size:2.5vw;
+        margin-right: 2vw;
+    }
+    p {
+        line-height: 75%;
+        padding: 0px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    a {
+        font-family: "Padauk";
+        color: white;
+        text-decoration:underline;
+    }
+}
