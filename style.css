@@ -9,7 +9,7 @@
     margin-left: 24vw;
 }
 .extra {
-    opacity: .25;
+    opacity: .70;
 }
 .extra:hover {
     opacity: 100;
@@ -39,6 +39,12 @@ a, a:visited {
     margin-top: 20vh;
     margin-bottom: 5vmin;
 }
+#portfoliolink, #portfoliolinktxt {
+    color:rgb(255, 238, 152);
+}/*
+#portfoliolinktxt {
+    text-decoration: underline;
+}*/
 /*background style*/
 .movingbg {
     position: fixed;
