@@ -32,7 +32,9 @@ body {
     color: rgb(220, 232, 246);
     margin-bottom:1vh;
 }
-
+#projectoutcome{
+    color: rgb(220, 232, 246);
+}
 a, a:visited {
     font-family: "Times New Roman", Times, serif;
     color: rgb(220, 232, 246);
