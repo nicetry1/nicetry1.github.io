@@ -1,0 +1,54 @@
+ @font-face {
+    font-family: "Padauk";
+    src: url(Padauk-Regular.ttf)
+    
+}
+body {
+    background-color:#d5e4f5;
+}
+.title {
+    font-family: "Padauk";
+    font-size:5vw;
+    margin-bottom:none;
+    color: #150a57;
+}
+
+/*
+.post-container {
+
+}
+
+.post-title {
+
+}
+
+p {
+
+}
+
+
+--mobile design 
+@media screen and (max-width:800px) {
+    .title {
+        font-family: "Padauk";
+        font-size:5vw;
+        color: white;
+        margin-left: 10vw;
+    }
+    .about-this {
+        font-size:2.5vw;
+        margin-right: 2vw;
+    }
+    p {
+        line-height: 75%;
+        padding: 0px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    a {
+        font-family: "Padauk";
+        color: white;
+        text-decoration:underline;
+    }
+}
+*/
