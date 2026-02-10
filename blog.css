@@ -4,32 +4,69 @@
     
 }
 body {
-    background-color:#d5e4f5;
+    background-color:#d5e4f5;;
 }
 .title {
     font-family: "Padauk";
-    font-size:5vw;
+    font-size:10vw;
     margin-bottom:none;
     color: #150a57;
+    transform-style: preserve-3d;
+transform: skewY(-8deg);
 }
+
 
 img {
-width: 15vw;
+width: 30vw;
 }
 
-/*
-.post-container {
 
+.post-container {
+width: 70vw;
+padding: 5vw 10vw;
 }
 
 .post-title {
-
+font-size:x-large;
+color:#150a57;
 }
 
-p {
-
+.post-date {
+font-family: "Padauk";
+color:rgb(255, 23, 23);
+padding-right: 10px;
 }
 
+ul {
+    list-style: none;
+}
+
+.book, .post-content {
+    line-height: 75%;
+        padding: 0px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        color:#150a57;
+}
+.book {
+    font-family: "padauk";
+}
+.booklist {
+    margin-bottom: 5vh;
+}
+a {
+    text-decoration: underline;
+    color: #150a57;
+}
+a:hover {
+    color: rgb(255, 23, 23);
+}
+.outline {
+    border-style:dotted;
+    border-color:rgb(255, 23, 23);
+
+}
+/*
 
 --mobile design 
 @media screen and (max-width:800px) {
